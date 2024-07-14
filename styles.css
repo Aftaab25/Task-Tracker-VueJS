@@ -59,7 +59,7 @@ header {
 #user-goals input:focus {
     outline: none;
     border-color: #1b995e;
-    background-color: #879eb0;
+    background-color: #879eb032;
 }
 
 #user-goals button {
