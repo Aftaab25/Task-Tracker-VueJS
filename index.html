@@ -18,7 +18,7 @@
         </header>
         <section id="user-goals">
             <h2>My Tasks</h2>
-            <input type="text" v-model="goalInput" />
+            <input type="text" v-model="goalInput" @keyup.enter="addGoal" />
             &nbsp;
             <button @click="addGoal">Add Task</button>
             <p v-if="goals.length === 0">
