@@ -11,7 +11,7 @@ const app = Vue.createApp({
         this.goalInput = "";
         return;
       }
-      this.goals.push(this.goalInput);
+      this.goals.unshift(this.goalInput);
       this.goalInput = "";
     },
     removeGoal(indx) {
