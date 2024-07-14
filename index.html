@@ -25,7 +25,13 @@
                 No tasks have been added yet - please start adding some!
             </p>
             <ul v-else>
-                <li v-for="(goal, idx) in goals" key="idx">{{goal}}</li>
+                <li
+                    v-for="(goal, idx) in goals"
+                    :key="idx"
+                    @click="removeGoal(idx)"
+                >
+                    {{goal}}
+                </li>
             </ul>
         </section>
     </body>
